@@ -1,26 +1,61 @@
+/**
+ * ===================================================================================
+ *  GŁÓWNY PLIK STYLÓW GLOBALNYCH I KONFIGURACJI TAILWIND
+ * ===================================================================================
+ * W Tailwind CSS v4, ten plik pełni podwójną rolę:
+ * 1. Definiuje globalne style dla całej aplikacji (jak kolor tła).
+ * 2. Służy jako plik konfiguracyjny dla Tailwinda, zastępując `tailwind.config.ts`.
+ * ===================================================================================
+ */
+
+/* 1. Importuje cały silnik Tailwind CSS.
+ * Ta dyrektywa jest obowiązkowa i musi być na samej górze.
+ * Mówi ona narzędziom budującym, aby przetworzyły ten plik za pomocą Tailwinda.
+ */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/**
+ * 2. Definicja Motywu (Theme) - "Panel Sterowania" Twojego Designu.
+ * Ten blok `@theme` to serce konfiguracji Tailwind v4.
+ * Wszystkie zdefiniowane tutaj zmienne CSS są automatycznie
+ * przekształcane przez Tailwind w klasy narzędziowe (utility classes).
+ * Np. `--color-raisinBlack` tworzy klasy `bg-raisinBlack`, `text-raisinBlack` itp.
+ */
+@theme {
+  /* Definiujemy naszą niestandardową paletę kolorów. */
+  --color-raisinBlack: rgb(38, 38, 38);
+  --color-arylideYellow: rgb(239, 293, 111);
+  --color-philippineSilver: rgb(178, 178, 178);
+  --color-oxfordBlue: rgb(0, 28, 72);
+
+  /* "Przedstawiamy" Tailwindowi nasze fonty. */
+  /* Ta linijka mówi: stwórz klasę `font-youngest`, która używa fontu o nazwie 'Youngest'. */
+  --font-youngest: "Youngest";
+
+  /* Ta linijka mówi: stwórz klasę `font-montserrat`, która używa wartości ze zmiennej CSS `--font-montserrat` 
+     (tę zmienną dostarcza Next.js z pliku `layout.tsx`). */
+  --font-montserrat: var(--font-montserrat);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/**
+ * 3. Definicja Stylów Bazowych (Base Layer).
+ * `@layer base` to specjalna dyrektywa Tailwinda, która pozwala nam
+ * dodawać lub modyfikować domyślne style dla podstawowych elementów HTML.
+ * Style zdefiniowane tutaj mają niski priorytet i mogą być łatwo nadpisane
+ * przez klasy narzędziowe (np. `bg-blue-500` nadpisze tło z `body`).
+ */
+@layer base {
+  /* 
+   * WAŻNE: USUWAMY STĄD RĘCZNĄ DEFINICJĘ @font-face!
+   * Ponieważ używamy `next/font/local` w pliku `fonts.ts`, Next.js
+   * automatycznie generuje zoptymalizowaną regułę @font-face za Ciebie.
+   * Pozostawienie jej tutaj spowodowałoby podwójne, niepotrzebne ładowanie fontu.
+   */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Definiujemy domyślny wygląd dla całej widocznej części strony. */
+  body {
+  background-color: theme('colors.raisinBlack');
+  color: white;
+  font-family: theme('fontFamily.montserrat');
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
