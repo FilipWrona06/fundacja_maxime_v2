@@ -1,7 +1,7 @@
 // Footer nie jest już komponentem klienckim! To dobrze dla wydajności.
 import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaYoutube, FaHeart } from 'react-icons/fa';
-import NewsletterForm from './common/NewsletterForm'; // <-- 1. Importujemy nasz nowy komponent
+import NewsletterForm from './NewsletterForm'; // <-- 1. Importujemy nasz nowy komponent
 
 const Footer = () => {
   return (

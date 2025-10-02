@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { navLinks } from '@/data/navigations'; // <-- 1. Importujemy naszą listę linków
-import NavItem from './common/NavItem';       // <-- 2. Importujemy nasz nowy "klocek"
+import { navLinks } from '@/components/layout/navbar/data/navigations'; // <-- 1. Importujemy naszą listę linków
+import NavItem from './NavItem';       // <-- 2. Importujemy nasz nowy "klocek"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

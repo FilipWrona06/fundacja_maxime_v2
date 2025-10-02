@@ -8,8 +8,8 @@
  * =================================================================
  */
 
-import { timelineData } from '@/data/timeline';
-import TimelineSection from '@/components/about/TimelineSection';
+import { timelineData } from '@/features/about/data/timeline';
+import TimelineSection from '@/features/about/TimelineSection';
 
 const AboutContent = () => {
   return (

@@ -11,7 +11,7 @@
 
 // Importujemy nasze mniejsze "klocki LEGO"
 import BackgroundVideo from './BackgroundVideo';
-import ButtonLink from '../ui/ButtonLink';
+import ButtonLink from '../../components/ui/ButtonLink';
 
 const Hero = () => {
   return (

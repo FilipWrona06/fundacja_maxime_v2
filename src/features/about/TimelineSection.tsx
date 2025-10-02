@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { TimelineItem } from '@/data/timeline'; // Importujemy nasz typ danych
+import { TimelineItem } from '@/features/about/data/timeline'; // Importujemy nasz typ danych
 
 // Definiujemy propsy, które komponent będzie przyjmował
 type TimelineSectionProps = {

@@ -23,7 +23,7 @@ export const fontYoungest = localFont({
    * do lokalizacji TEGO pliku (czyli `src/app/fonts.ts`).
    * './fonts/...' oznacza: "w tym samym folderze (`app`), znajdź podfolder `fonts`...".
    */
-  src: './fonts/the-youngest-script.ttf',
+  src: '../assets/fonts/the-youngest-script.ttf',
 
   /**
    * Tworzenie zmiennej CSS - "Most do świata CSS i Tailwinda".
