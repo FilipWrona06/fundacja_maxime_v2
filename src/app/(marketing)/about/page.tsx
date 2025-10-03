@@ -1,9 +1,9 @@
-import AboutContent from '@/features/about/AboutContent';
+import About from '@/components/about/About';
 
 export default function AboutPage() {
   return (
     <main>
-      <AboutContent />
+      <About />
     </main>
   );
 }

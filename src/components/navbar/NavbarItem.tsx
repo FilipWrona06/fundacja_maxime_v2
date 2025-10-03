@@ -14,13 +14,13 @@ import { usePathname } from 'next/navigation';
  */
 
 // Definiujemy, jakie właściwości (props) ten komponent przyjmuje.
-type NavItemProps = {
+type NavbarItemProps = {
   href: string;       // Adres URL, do którego prowadzi link (np. "/about")
   label: string;      // Tekst, który ma być wyświetlony (np. "O nas")
   onClick?: () => void; // Opcjonalna funkcja wywoływana po kliknięciu (używana do zamykania menu mobilnego)
 };
 
-const NavItem = ({ href, label, onClick }: NavItemProps) => {
+const NavbarItem = ({ href, label, onClick }: NavbarItemProps) => {
   // 1. Pobieramy aktualną ścieżkę URL z przeglądarki.
   // Hook `usePathname` zwraca string, np. "/gallery", "/contact" itp.
   const pathname = usePathname();
@@ -49,4 +49,4 @@ const NavItem = ({ href, label, onClick }: NavItemProps) => {
   );
 };
 
-export default NavItem;
+export default NavbarItem;

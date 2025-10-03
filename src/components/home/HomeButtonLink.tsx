@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-type ButtonLinkProps = {
+type HomeButtonLinkProps = {
   href: string;
   children: React.ReactNode;
 };
 
-const ButtonLink = ({ href, children }: ButtonLinkProps) => {
+const HomeButtonLink = ({ href, children }: HomeButtonLinkProps) => {
   const baseStyles = "bg-transparent border-2 border-philippineSilver rounded-full px-8 py-3 text-sm font-montserrat font-bold tracking-wider hover:bg-philippineSilver hover:text-raisinBlack transition-all duration-250";
 
   return (
@@ -15,4 +15,4 @@ const ButtonLink = ({ href, children }: ButtonLinkProps) => {
   );
 };
 
-export default ButtonLink;
+export default HomeButtonLink;

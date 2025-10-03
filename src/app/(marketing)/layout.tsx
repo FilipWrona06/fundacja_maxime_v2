@@ -6,8 +6,8 @@ import { fontYoungest } from '@/lib/fonts';
 import '../globals.css';
 
 // 1. Importujemy komponenty, które tworzą nasz stały szablon
-import Navbar from '@/components/layout/navbar/Navbar';
-import Footer from '@/components/layout/footer/Footer';
+import Navbar from '@/components/navbar/Navbar';
+import Footer from '@/components/footer/Footer';
 
 const montserrat = Montserrat({
   subsets: ['latin-ext'],

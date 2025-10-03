@@ -1,4 +1,4 @@
-const BackgroundVideo = () => {
+const HomeBackgroundVideo = () => {
   return (
     <>
       {/* Ciemna nakładka */}
@@ -14,4 +14,4 @@ const BackgroundVideo = () => {
   );
 };
 
-export default BackgroundVideo;
+export default HomeBackgroundVideo;
