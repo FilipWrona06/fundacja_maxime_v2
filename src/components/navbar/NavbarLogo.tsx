@@ -2,10 +2,6 @@
 
 import Link from 'next/link';
 
-type NavbarLogoProps = {
-  // Możemy dodać propsy, aby kontrolować np. rozmiar w przyszłości
-};
-
 /**
  * =================================================================
  *  Komponent Logotypu Nawigacji
@@ -14,7 +10,7 @@ type NavbarLogoProps = {
  * do strony głównej.
  * =================================================================
  */
-const NavbarLogo = ({}: NavbarLogoProps) => {
+const NavbarLogo = () => {
   return (
     <Link href="/" className="font-youngest">
       Fundacja Maxime
