@@ -11,7 +11,7 @@ const LightboxButton: React.FC<LightboxButtonProps> = ({ onClick, children, aria
   <button
     onClick={onClick}
     aria-label={ariaLabel}
-    className={`absolute top-1/2 -translate-y-1/2 ${position === 'left' ? 'left-2 md:left-4' : 'right-2 md:right-4'} z-20 rounded-full bg-black/50 p-2 text-white transition hover:bg-black/75 focus:outline-none focus:ring-2 focus:ring-white`}
+    className={`absolute top-1/2 -translate-y-1/2 ${position === 'left' ? 'left-2 md:left-4' : 'right-2 md:right-4'} z-20 rounded-full bg-black/85 p-2 transition focus:outline-none focus:ring-2 focus:ring-white`}
   >
     {children}
   </button>

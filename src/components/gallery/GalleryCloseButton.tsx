@@ -7,7 +7,7 @@ interface CloseButtonProps {
 const CloseButton: React.FC<CloseButtonProps> = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-2 top-2 md:right-4 md:top-4 z-20 text-3xl text-white transition-colors hover:text-gray-300"
+    className="absolute right-2 top-2 md:right-4 md:top-4 z-20 text-3xl transition-colors hover:text-philippineSilver"
     aria-label="Zamknij"
   >
     &times;

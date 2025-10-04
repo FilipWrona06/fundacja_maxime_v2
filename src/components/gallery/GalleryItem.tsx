@@ -13,7 +13,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({ image, isPriority, onImageCli
   return (
     <div
       // ZMIANA: Dodajemy klasę aspect-ratio
-      className="group cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square" // <-- TUTAJ ZMIANA
+      className="group cursor-pointer overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl aspect-square" // <-- TUTAJ ZMIANA
       onClick={() => onImageClick(image)}
     >
       <Image

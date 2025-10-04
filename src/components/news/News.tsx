@@ -16,6 +16,7 @@ const NewsList: React.FC = () => {
           <p className="mt-4 text-lg">
             Bądź na bieżąco z życiem naszej fundacji.
           </p>
+          <div className="w-3/4 h-0.5 bg-philippineSilver mx-auto mt-8"></div>
         </header>
         <main className="max-w-4xl mx-auto">
           <div className="space-y-12">
@@ -23,7 +24,7 @@ const NewsList: React.FC = () => {
               <Link
                 href={`/news/${article.slug}`}
                 key={article.id}
-                className="block group bg-oxfordBlue rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                className="block group bg-oxfordBlue rounded-3xl overflow-hidden hover:scale-105 shadow-lg hover:shadow-2xl transition-shadow duration-300"
               >
                 <div className="md:flex">
                   <div className="md:flex-shrink-0 md:w-5/12">
@@ -33,7 +34,7 @@ const NewsList: React.FC = () => {
                         alt={article.title}
                         layout="fill"
                         objectFit="cover"
-                        className="transition-transform duration-300 group-hover:scale-105"
+                        className="transition-transform duration-300"
                       />
                     </div>
                   </div>
