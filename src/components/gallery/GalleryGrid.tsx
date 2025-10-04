@@ -1,7 +1,7 @@
 // src/components/gallery/GalleryGrid.tsx
 
 import GalleryItem from './GalleryItem';
-import type { GalleryImage } from '@/lib/types';
+import type { GalleryImage } from '@/data/gallery/galleryImages';
 
 interface GalleryGridProps {
   images: readonly GalleryImage[];

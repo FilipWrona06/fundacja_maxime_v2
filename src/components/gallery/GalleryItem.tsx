@@ -1,7 +1,7 @@
 // src/components/gallery/GalleryItem.tsx
 
 import Image from 'next/image';
-import type { GalleryImage } from '@/lib/types';
+import type { GalleryImage } from '@/data/gallery/galleryImages';
 
 interface GalleryItemProps {
   image: GalleryImage;

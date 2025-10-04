@@ -2,7 +2,7 @@
 
 'use client';
 
-import { useGallery } from '@/hooks/useGallery';
+import { useGallery } from '@/hooks/gallery/useGallery';
 import GalleryGrid from './GalleryGrid';
 import GalleryLightbox from './GalleryLightbox';
 

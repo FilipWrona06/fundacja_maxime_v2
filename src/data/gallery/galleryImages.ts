@@ -1,6 +1,15 @@
 // src/data/gallery/galleryImages.ts
 
-import { GalleryImage } from '@/lib/types';
+/**
+ * Definiuje strukturę obiektu zdjęcia używanego w całej aplikacji.
+ * Zawiera źródło, tekst alternatywny oraz wymiary dla optymalizacji.
+ */
+export interface GalleryImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
 
 /**
  * Tablica zawierająca dane wszystkich zdjęć do galerii.

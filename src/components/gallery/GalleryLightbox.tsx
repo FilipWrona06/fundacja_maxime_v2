@@ -3,8 +3,8 @@
 'use client';
 
 import Image from 'next/image';
-import type { GalleryImage } from '@/lib/types';
-import { useLightboxKeys } from '@/hooks/useLightboxKeys'; // <-- Importujemy hooka
+import type { GalleryImage } from '@/data/gallery/galleryImages';
+import { useLightboxKeys } from '@/hooks/gallery/useLightboxKeys'; // <-- Importujemy hooka
 
 // Import komponentów UI
 import LightboxButton from './GalleryLightboxButton';

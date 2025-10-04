@@ -1,8 +1,7 @@
 // src/hooks/useGallery.ts
 
 import { useState, useCallback } from 'react';
-import { galleryImages } from '@/data/gallery/galleryImages';
-import type { GalleryImage } from '@/lib/types';
+import { galleryImages, GalleryImage } from '@/data/gallery/galleryImages';
 
 /**
  * Niestandardowy hook do zarządzania logiką galerii zdjęć.
