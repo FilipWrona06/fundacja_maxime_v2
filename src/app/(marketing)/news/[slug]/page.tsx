@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { newsData } from '@/data/news/newsItems';
-
+import NewsBackButton from '@/components/news/NewsBackButton';
 // Ta funkcja generuje statyczne strony dla każdego slugu podczas budowania aplikacji
 // Jest to dobra praktyka dla wydajności i SEO
 export async function generateStaticParams() {
@@ -58,14 +58,12 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
 
-          <div className="mt-12 text-center">
-            <Link 
-              href="/news"
-              className="inline-block px-6 py-3 text-lg font-bold bg-oxfordBlue shadow-lg hover:scale-105 hover:shadow-2xl rounded-3xl transition-colors"
-            >
-              ← Wróć do aktualności
-            </Link>
-          </div>
+          {/* Link powrotny z użyciem reużywalnego komponentu */}
+<NewsBackButton 
+  href="/news" 
+  text="← Wróć do aktualności" 
+  className="mt-12" // Przekazujemy margines jako dodatkową klasę
+/>
         </main>
       </div>
   );

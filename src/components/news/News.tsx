@@ -19,12 +19,12 @@ const NewsList: React.FC = () => {
           <div className="w-3/4 h-0.5 bg-philippineSilver mx-auto mt-8"></div>
         </header>
         <main className="max-w-4xl mx-auto">
-          <div className="space-y-12">
+          <div className="space-y-12 ">
             {newsData.map((article) => (
               <Link
                 href={`/news/${article.slug}`}
                 key={article.id}
-                className="block group bg-oxfordBlue rounded-3xl overflow-hidden hover:scale-105 shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                className=" block group bg-transparent border-2 border-philippineSilver hover:font-semibold shadow-lg hover:shadow-2xl hover:scale-105 rounded-3xl overflow-hidden hover:bg-philippineSilver hover:text-raisinBlack transition-all duration-250"
               >
                 <div className="md:flex">
                   <div className="md:flex-shrink-0 md:w-5/12">
